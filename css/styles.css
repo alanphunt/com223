@@ -159,7 +159,7 @@ nav a:hover ~ .underline{
 }
 
 #tilt2{
-	top: 1300px;
+	bottom: 50px;
 }
 
 #aboutus{
@@ -290,7 +290,4 @@ header{
 		height: 320px;
 	}
 
-	#tilt2{
-		top: 700px;
-	}
 }
