@@ -64,17 +64,13 @@ header{
 }
 
 nav{
-	margin: 0 auto;
-	text-align: right;
+	display: block;
 	font-size: 22px;
 	padding-top: 5%;
 }
 
 nav ul{
 	list-style: none;
-	margin-left: auto;
-	white-space: nowrap;
-	box-sizing: content-box;
 }
 
 nav li{
@@ -122,13 +118,18 @@ nav a:hover ~ .underline{
 	background-color: #5cbcc0;
 }
 
-header img{
+#heroimage{
 	z-index: 3;
 }
 
-#herotext{
+#heroimage img{
 	width: 100%;
-	padding: 5% 0 0 60px;
+	max-width: 530px;
+}
+
+#herotext{
+	width: 60%;
+	padding: 5% 5% 0 5%;
 }
 
 #herotext h1{
@@ -176,7 +177,7 @@ header img{
 	background-size: cover;
 	padding: 35px;
 	z-index: 0;
-	padding-top: 285px;
+	padding-top: 18%;
 	box-sizing: content-box;
 	color: white;
 }
@@ -223,12 +224,73 @@ footer p{
 	margin: 0 auto;
 }
 
+#mobile{
+	display: none;
+	padding-top: 5%;
+	cursor: pointer;
+}
+
+#mobile:hover{
+	color: #d5dade;
+}
+
+.menuicon{
+	display: block;
+	margin: 0 auto;
+}
 
 
+@media only screen and (max-width: 1050px) {
+
+#heroimage{
+	display: none;
+}
+#herotext{
+	width: 100%;
+}
+
+	#mission{
+		padding-top: 23%;
+	}
+
+	header{
+		height: 400px;
+	}
+
+	#aboutus{
+		padding-top: 0;
+	}
+}
 
 
+@media only screen and (max-width: 768px) {
+	nav{
+		display: none;
+	}
 
-@media only
-screen and (max-width: 915px) {
+	#mobile{
+		display: block;
+	}
+}
 
+@media only screen and (max-width: 768px) {
+header{
+	padding-left: 0;
+	height: 300px;
+}
+	#herotext h1{
+		font-size: 2rem;
+	}
+
+	#tilt1{
+		top: -30px;
+	}
+
+	.tilt{
+		height: 320px;
+	}
+
+	#tilt2{
+		top: 700px;
+	}
 }
