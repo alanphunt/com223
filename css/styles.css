@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -19,8 +20,13 @@ body {
 }
 
 a{
+	color: white;
 	text-decoration: none;
 	transition: .3s ease;
+}
+
+a:hover{
+	color: #d5dade;
 }
 
 h1, h2, h3, h4 {
@@ -129,6 +135,7 @@ nav a:hover ~ .underline{
 
 #herotext{
 	width: 60%;
+	max-width: 700px;
 	padding: 5% 5% 0 5%;
 }
 
