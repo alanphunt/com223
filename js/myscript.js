@@ -40,15 +40,17 @@ function slideshow(){
 
 	setInterval(function(){
 
-		if(slideIndex >= slide.length)
+		if(slideIndex >= slide.length) {
+			slide[slideIndex-1].style.display = "none";
 			slideIndex = 0;
+		}
 
-		if(slideIndex != 0)
+		if(slideIndex != 0 )
 			slide[slideIndex-1].style.display = "none";
 
 		slide[slideIndex].style.display = "block";
 		slideIndex++;
 
-	}, 5000);
+	}, 1000);
 
 }
