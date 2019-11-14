@@ -51,6 +51,6 @@ function slideshow(){
 		slide[slideIndex].style.display = "block";
 		slideIndex++;
 
-	}, 1000);
+	}, 4000);
 
 }
